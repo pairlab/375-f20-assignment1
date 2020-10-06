@@ -12,6 +12,7 @@ import numpy as np
 #   - Kd: derivative gain matrix
 def compute_jsid_dv(dv_ref, v, v_ref, q, q_ref, Kp, Kd):
     ### ================ YOUR CODE STARTS ==========================
+    raise NotImplementedError("compute_jsid_dv not implemented")
     dv = None
     ### ================  YOUR CODE ENDS  ==========================
     return dv
@@ -24,6 +25,7 @@ def compute_jsid_dv(dv_ref, v, v_ref, q, q_ref, Kp, Kd):
 #   - h: external forces
 def compute_jsid_tau(dv_desired, M, h):
     ### ================ YOUR CODE STARTS ==========================
+    raise NotImplementedError("compute_jsid_tau not implemented")
     tau = None
     ### ================  YOUR CODE ENDS  ==========================
     return tau
@@ -38,6 +40,7 @@ def compute_jsid_tau(dv_desired, M, h):
 #   - h: external forces
 def compute_tsid_tau(ddx_desired, J, dJ, v, M, h):
     ### ================ YOUR CODE STARTS ==========================
+    raise NotImplementedError("compute_tsid_tau not implemented")
     tau = None
     ### ================  YOUR CODE ENDS  ==========================
     return tau
