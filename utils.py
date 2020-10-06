@@ -7,7 +7,7 @@ def plot_line_segments(segments, **kwargs):
              [y for tup in [(p1[1], p2[1], None) for (p1, p2) in segments] for y in tup], **kwargs)
 
 def generate_planning_problem(width, height, num_obs, min_size, max_size):
-    from P1_astar import DetOccupancyGrid2D
+    from A_star_toedit import DetOccupancyGrid2D
     x_margin = round(width*0.1)
     y_margin = round(height*0.1)
     obs_corners_x = np.random.randint(-x_margin, width+x_margin, num_obs)
