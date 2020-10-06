@@ -100,7 +100,7 @@ class RRT(object):
         #     are meaningful! keep this in mind when using the helper functions!
 
         ########## Code starts here ##########
-        
+
         ########## Code ends here ##########
 
         plt.figure()
@@ -138,7 +138,8 @@ class RRT(object):
             None, but should modify self.path
         """
         ########## Code starts here ##########
-        
+        raise NotImplementedError("shortcut_path not implemented")
+
         ########## Code ends here ##########
 
 class GeometricRRT(RRT):
@@ -150,13 +151,15 @@ class GeometricRRT(RRT):
     def find_nearest(self, V, x):
         ########## Code starts here ##########
         # Hint: This should take one line.
-        
+        raise NotImplementedError("find_nearest not implemented")
+
         ########## Code ends here ##########
 
     def steer_towards(self, x1, x2, eps):
         ########## Code starts here ##########
         # Hint: This should take one line.
-        
+        raise NotImplementedError("steer_towards not implemented")
+
         ########## Code ends here ##########
 
     def is_free_motion(self, obstacles, x1, x2):
@@ -192,7 +195,8 @@ class DubinsRRT(RRT):
     def find_nearest(self, V, x):
         from dubins import path_length
         ########## Code starts here ##########
-        
+        raise NotImplementedError("find_nearest not implemented")
+
         ########## Code ends here ##########
 
     def steer_towards(self, x1, x2, eps):
@@ -206,7 +210,8 @@ class DubinsRRT(RRT):
         distance eps (using self.turning_radius) due to numerical precision
         issues.
         """
-        
+        raise NotImplementedError("steer_towards")
+
         ########## Code ends here ##########
 
     def is_free_motion(self, obstacles, x1, x2, resolution = np.pi/6):
