@@ -17,3 +17,9 @@ Activate the new environment before running code.
 ```
 conda activate 375a1
 ```
+
+Start jupyter and run notebooks.
+
+```
+jupyter notebook
+``` 
